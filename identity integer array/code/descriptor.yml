@@ -1,0 +1,48 @@
+name: identity with int collection
+name_short: identity_integer_collection
+version: 0.1.0
+namespace: com.cytomine.dummy.identity.integer.collection
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Siddig
+    last_name: Hamed
+    organization: University of Liege
+    email: siddig.hamed@uliege.com
+    is_contact: true
+
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.integer.collection-0.1.0.tar
+
+inputs:
+  input:
+    display_name: input integer collection
+    description: simple array of integers
+    dependencies:
+      matching:
+        - outputs/output
+    type:
+      id: array
+      min_size: 1
+      max_size: 5
+      subtype:
+        id: integer
+        leq: 300.0
+        geq: 0
+
+outputs:
+  output:
+    display_name: output integer collection
+    description: simple array of integers
+    dependencies:
+      derived_from: inputs/input
+    type:
+      id: array
+      min_size: 1
+      max_size: 5
+      subtype:
+        id: integer
+        leq: 300.0
+        geq: 0

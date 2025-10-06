@@ -1,0 +1,26 @@
+name: identity with integer
+name_short: identity_integer
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.integer
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Romain
+    last_name: Mormont
+    organization: Cytomine Corporation
+    email: romain.mormont@cytomine.com
+    is_contact: true
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /image.tar
+inputs:
+  input:
+    display_name: input
+    type: integer
+    description: Input to forward
+outputs:
+  output:
+    display_name: output
+    type: integer
+    description: Forwarded input

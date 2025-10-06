@@ -1,0 +1,30 @@
+name: identity with enumeration
+name_short: identity_enumeration
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.enumeration
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Romain
+    last_name: Mormont
+    organization: Cytomine Corporation
+    email: romain.mormont@cytomine.com
+    is_contact: true
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.enumeration-1.0.0.tar
+inputs:
+  input:
+    display_name: input
+    type:
+      id: enumeration
+      values: ["A", "B", "C"]
+    description: Input to forward
+outputs:
+  output:
+    display_name: output
+    type:
+      id: enumeration
+      values: ["A", "B", "C"]
+    description: Forwarded input

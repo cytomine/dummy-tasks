@@ -1,0 +1,26 @@
+name: identity with datetime
+name_short: identity_datetime
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.datetime
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Romain
+    last_name: Mormont
+    organization: Cytomine Corporation
+    email: romain.mormont@cytomine.com
+    is_contact: true
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.datetime-1.0.0.tar
+inputs:
+  input:
+    display_name: input
+    type: datetime
+    description: Input to forward
+outputs:
+  output:
+    display_name: output
+    type: datetime
+    description: Forwarded input

@@ -1,0 +1,26 @@
+name: identity with boolean
+name_short: identity_boolean
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.boolean
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Romain
+    last_name: Mormont
+    organization: Cytomine Corporation
+    email: romain.mormont@cytomine.com
+    is_contact: true
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.boolean-1.0.0.tar
+inputs:
+  input:
+    display_name: input
+    type: boolean
+    description: Input to forward
+outputs:
+  output:
+    display_name: output
+    type: boolean
+    description: Forwarded input

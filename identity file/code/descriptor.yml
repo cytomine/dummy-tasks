@@ -1,0 +1,30 @@
+name: identity with file
+name_short: identity_file
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.file
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+authors:
+  - first_name: Ba Thien
+    last_name: Le
+    organization: University of Liège
+    email: ba.le@uliege.be
+    is_contact: true
+
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.file-1.0.0.tar
+
+inputs:
+  input:
+    display_name: input
+    type: file
+    description: Input to forward
+
+outputs:
+  output:
+    display_name: output
+    type: file
+    description: Forwarded input
+

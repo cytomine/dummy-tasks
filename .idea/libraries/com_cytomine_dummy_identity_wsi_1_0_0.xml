@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.cytomine.dummy.identity.wsi-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/identity WSI/com.cytomine.dummy.identity.wsi-1.0.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
