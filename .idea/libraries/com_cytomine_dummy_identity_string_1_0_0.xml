@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com.cytomine.dummy.identity.string-1.0.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/identity string/com.cytomine.dummy.identity.string-1.0.0.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
