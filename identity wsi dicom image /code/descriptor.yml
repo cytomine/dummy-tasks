@@ -1,7 +1,7 @@
-name: identity with image
+name: identity with wsi dicom image
 name_short: identity_image
 version: 1.0.0
-namespace: com.cytomine.dummy.identity.image
+namespace: com.cytomine.dummy.identity.wsidicom.image
 $schema: https://raw.githubusercontent.com/cytomine/cytomine/refs/heads/main/app-engine/src/main/resources/schemas/tasks/task.v0.json
 authors:
   - first_name: Romain
@@ -13,7 +13,7 @@ configuration:
   input_folder: /inputs
   output_folder: /outputs
   image:
-    file: /com.cytomine.dummy.identity.image-1.0.0.tar
+    file: /com.cytomine.dummy.identity.wsidicom.image-1.0.0.tar
 inputs:
   input:
     display_name: input
