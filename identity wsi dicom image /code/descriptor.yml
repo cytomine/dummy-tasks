@@ -17,10 +17,16 @@ configuration:
 inputs:
   input:
     display_name: input
-    type: image
+    type:
+      id: image
+      formats:
+        - wsidicom
     description: Input to forward
 outputs:
   output:
     display_name: output
-    type: image
+    type:
+      id: image
+      formats:
+        - wsidicom
     description: Forwarded input
