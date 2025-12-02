@@ -1,0 +1,36 @@
+name: identity wsidicom image array
+name_short: identity_image_array
+version: 1.0.0
+namespace: com.cytomine.dummy.identity.wsidicom.image.array
+$schema: https://raw.githubusercontent.com/cytomine/cytomine/refs/heads/main/app-engine/src/main/resources/schemas/tasks/task.v0.json
+authors:
+  - first_name: Romain
+    last_name: Mormont
+    organization: Cytomine Corporation
+    email: romain.mormont@cytomine.com
+    is_contact: true
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+  image:
+    file: /com.cytomine.dummy.identity.wsidicom.image.array-1.0.0.tar
+inputs:
+  input:
+    display_name: input
+    type:
+      id: array
+      subtype:
+        id: image
+        formats:
+          - wsidicom
+    description: Input to forward array
+outputs:
+  output:
+    display_name: output
+    type:
+      id: array
+      subtype:
+        id: image
+        formats:
+          - wsidicom
+    description: Forwarded input array
